@@ -13,15 +13,15 @@
 | 分类 | 上游数量 | 已翻译 | 覆盖率 |
 |------|----------|--------|--------|
 | design | 7 | 3 | 43% |
-| engineering | 7 | 6 | 86% |
+| engineering | 7 | 7 | 100% |
 | marketing | 11 | 2 | 18% |
 | product | 3 | 3 | 100% |
 | project-management | 5 | 0 | 0% |
 | spatial-computing | 6 | 0 | 0% |
 | specialized | 7 | 1 | 14% |
 | strategy | 16 | 0 | 0% |
-| support | 6 | 3 | 50% |
-| testing | 7 | 4 | 57% |
+| support | 6 | 6 | 100% |
+| testing | 8 | 8 | 100% |
 
 ## 中国市场原创智能体
 

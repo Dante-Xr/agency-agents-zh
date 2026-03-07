@@ -53,6 +53,8 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [DevOps 自动化](engineering/engineering-devops-automator.md) | CI/CD、基础设施自动化 | 流水线开发、部署自动化 |
 | [安全工程师](engineering/engineering-security-engineer.md) | 威胁建模、代码审计、安全架构 | 应用安全、漏洞评估 |
 | [快速原型师](engineering/engineering-rapid-prototyper.md) | 快速 POC、MVP 开发 | 概念验证、黑客马拉松 |
+| [高级开发者](engineering/engineering-senior-developer.md) | Laravel/Livewire/FluxUI、高端 CSS、Three.js | 高品质 Web 体验 |
+| [移动应用开发者](engineering/engineering-mobile-app-builder.md) | iOS/Android 原生、跨平台框架 | 移动端开发、App 性能优化 |
 
 ### 设计部
 
@@ -96,6 +98,10 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [现实检验者](testing/testing-reality-checker.md) | 证据驱动认证、质量关卡 | 生产就绪评估 |
 | [API 测试员](testing/testing-api-tester.md) | API 验证、集成测试 | 接口测试、端点验证 |
 | [性能基准师](testing/testing-performance-benchmarker.md) | 性能测试、优化 | 压测、性能调优 |
+| [无障碍审核员](testing/testing-accessibility-auditor.md) | WCAG 审核、辅助技术测试 | 无障碍合规、包容性设计 |
+| [测试结果分析师](testing/testing-test-results-analyzer.md) | 测试数据分析、质量度量 | 质量趋势、发布决策 |
+| [工具评估师](testing/testing-tool-evaluator.md) | 工具选型、功能对比 | 技术选型、工具采购 |
+| [工作流优化师](testing/testing-workflow-optimizer.md) | 流程分析、自动化 | 效率提升、流程改进 |
 
 ### 支持部
 
@@ -106,6 +112,9 @@ cp -r agency-agents-zh/* ~/.claude/agents/
 | [客服响应者](support/support-support-responder.md) | 客户服务、工单处理 | 客户支持、用户体验 |
 | [数据分析师](support/support-analytics-reporter.md) | 数据分析、仪表盘 | 商业智能、KPI 追踪 |
 | [法务合规员](support/support-legal-compliance-checker.md) | 合规审查、法规检查 | 法律合规、风险管理 |
+| [高管摘要师](support/support-executive-summary-generator.md) | 业务摘要、战略沟通 | 高管汇报、决策支持 |
+| [财务追踪员](support/support-finance-tracker.md) | 财务分析、预算管理 | 财务规划、成本管控 |
+| [基础设施运维师](support/support-infrastructure-maintainer.md) | 系统运维、可靠性工程 | 基础设施管理、故障排查 |
 
 ### 专项部
 
