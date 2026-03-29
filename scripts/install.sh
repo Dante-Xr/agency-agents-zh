@@ -219,7 +219,20 @@ install_openclaw() {
     cp "$d/AGENTS.md" "$dest/$name/AGENTS.md"
     cp "$d/IDENTITY.md" "$dest/$name/IDENTITY.md"
     if command -v openclaw >/dev/null 2>&1; then
-      openclaw agents add "$name" --workspace "$dest/$name" --non-interactive || true
+      # 跳过已注册的智能体，避免重复 add 导致阻塞（#34）
+      if openclaw agents list 2>/dev/null | grep -q "$name"; then
+        dim "  跳过已注册: $name"
+      else
+        # 超时 30s 防止命令挂起（macOS 兼容写法）
+        if command -v timeout >/dev/null 2>&1; then
+          timeout 30 openclaw agents add "$name" --workspace "$dest/$name" --non-interactive 2>/dev/null || true
+        else
+          openclaw agents add "$name" --workspace "$dest/$name" --non-interactive 2>/dev/null &
+          local pid=$!
+          ( sleep 30 && kill "$pid" 2>/dev/null ) &
+          wait "$pid" 2>/dev/null || true
+        fi
+      fi
     fi
     (( count++ )) || true
   done < <(find "$src" -mindepth 1 -maxdepth 1 -type d -print0)
